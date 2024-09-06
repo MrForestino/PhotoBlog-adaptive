@@ -77,32 +77,16 @@
         
         //! Стилі кнопки firts
         .gallery__button-firts {
-            // -----------------------------------------
-            //? Використання додаткового класу:
-            @extend .buttons;
-            //* Використання плейсхолдера:
-            // @extend %buttons;
-            //! Використання міксіна:
-            // @include buttons;
-            // -----------------------------------------
-            margin-top: 90px;
-            color: red;
-            background-color: aqua;
+            // @extend .buttons;
+            align-self: center;
+            margin-top: 94px;
+            width: 165px;
+            height: 60px;
+            font-weight: 400;
+            font-size: 14px;
+            color: #626262;
         }
         
         //! Стилі кнопки second
-        .gallery__button-second {
-            // -----------------------------------------
-            //? Використання додаткового класу:
-            // @extend .buttons;
-            //* Використання плейсхолдера:
-            // @extend %buttons;
-            //! Використання міксіна:
-            @include buttons;
-            // -----------------------------------------
-            margin-top: 10px;
-            color: aqua;
-            background-color: red;
-        }
     }
 }
