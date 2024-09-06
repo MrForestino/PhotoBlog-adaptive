@@ -7,12 +7,12 @@
         @include flex_FDcol;
         align-items: center;
         @media screen and (min-width:768px){
-            flex-direction: row;
-            justify-content:space-around;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
         @media screen and (min-width:1200px){
-            justify-content:space-around;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
         }
         &__link {
             text-transform: lowercase;
