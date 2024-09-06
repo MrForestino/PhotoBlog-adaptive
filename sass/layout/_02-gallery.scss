@@ -74,63 +74,6 @@
                 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             }
         }
-
-        //* +++++ СТИЛІЗАЦІЯ КНОПОК - 1-й варіант +++++
-        //* Використання Міксів та Модифікаторів
-        // //! Загальні стилі кнопки
-        // .gallery-button {
-        //     align-self: center;
-        //     // margin-top: 90px;
-        //     padding: 20px 48px 21px 48px;
-        //     font-size: 1.5rem;
-        //     background-color: inherit;
-        // }
-        
-        // //! Мікси (міксування, суміш).
-        // //!  Зовнішня геометрія або позиціонування, необхідні тільки у певному місці
-        // .gallery__button-firts {
-        //     margin-top: 90px;
-        // }
-        
-        // .gallery__button-second {
-        //     margin-top: 10px;
-        // }
-        
-        // //! Модифікатор - визначає зміну зовнішнього вигляду
-        // .gallery-button--style-firts {
-        //     color: red;
-        //     background-color: aqua;
-        // }
-        
-        // .gallery-button--style-second {
-        //     color: aqua;
-        //     background-color: red;
-        // }
-
-        //* +++++ СТИЛІЗАЦІЯ КНОПОК - 2-й варіант +++++
-        //* Використання Директиви @extend
-        //! Загальні стилі кнопки
-        //? Додатковий клас, також є в components/_buttons.scss:
-        // .buttons {
-        //     align-self: center;
-        //     padding: 20px 48px 21px 48px;
-        //     font-size: 1.5rem;
-        //     background-color: inherit;
-        // }
-        //* Шаблон (плейсхолдер), також є в utils/_plaseholders.scss:
-        // %buttons {
-        //     align-self: center;
-        //     padding: 20px 48px 21px 48px;
-        //     font-size: 1.5rem;
-        //     background-color: inherit;
-        // }
-        //! Міксін, також є в utils/_mixins.scss:
-        // @mixin buttons {
-        //     align-self: center;
-        //     padding: 20px 48px 21px 48px;
-        //     font-size: 1.5rem;
-        //     background-color: inherit;
-        // }
         
         //! Стилі кнопки firts
         .gallery__button-firts {
