@@ -2,10 +2,46 @@
 .header {
     padding-top: 71px;
     padding-bottom: 92px;
+    input{
+        display: none;
+    }
+        label {
+            display: block;
+            height: 30px;
+            position: relative;
+            top: 15px;
+
+            span::after{
+                top: 8px;
+            }
+            span::before{
+                top: -8px;
+            }
+
+        span,
+        span::after,
+        span::before{
+            content: '';
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: #212121;
+            position: absolute;
+            right: 0;
+            transition: 0.3s;
+        }
+        
+        @media screen and (min-width:768px){
+            display: none;
+        }
+
+        }
+    }
     .nav-list {
         margin: 0 auto;
         @include flex_FDcol;
         align-items: center;
+
         @media screen and (min-width:768px){
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -26,5 +62,5 @@
             color: getColor('hover');
         }
     }
-}
+
 
