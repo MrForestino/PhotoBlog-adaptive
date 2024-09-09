@@ -29,6 +29,7 @@
             position: absolute;
             right: 0;
             transition: 0.3s;
+            border-radius: 15px;
         }
         
         @media screen and (min-width:768px){
@@ -37,11 +38,35 @@
 
         }
     }
-    .nav-list {
-        margin: 0 auto;
-        @include flex_FDcol;
-        align-items: center;
+    input[type="checkbox"]:checked ~.nav-list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
 
+    }
+    input[type="checkbox"]:checked ~ label span {
+        transform: rotate(45deg);
+
+    }
+    input[type="checkbox"]:checked ~ label span::before {
+        top: 0;
+        transform: rotate(0);
+     }
+     input[type="checkbox"]:checked ~ label span::after {
+        top: 0;
+        transform: rotate(90deg);
+     }
+    .nav-list li{
+        margin: 15px 0;
+    }
+    .nav-list {
+        display: none;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+   
         @media screen and (min-width:768px){
             display: grid;
             grid-template-columns: 1fr 1fr;
